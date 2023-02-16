@@ -1,5 +1,5 @@
-import sass from 'sass'
+const sass = require('../build/npm/sass.default.dart.js')
 
 window.sass = sass
 
-sass.compile('style.scss') // Uncaught TypeError: Cannot read properties of undefined (reading 'isTTY')
+sass.compile('style.scss')

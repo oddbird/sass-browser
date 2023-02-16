@@ -4,8 +4,13 @@ import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfil
 import { NodeModulesPolyfillPlugin } from '@esbuild-plugins/node-modules-polyfill'
 // You don't need to add this to deps, it's included by @esbuild-plugins/node-modules-polyfill
 import rollupNodePolyFill from 'rollup-plugin-node-polyfills'
+import { viteCommonjs } from '@originjs/vite-plugin-commonjs'
 
+/** @type {import('vite').UserConfig} */
 export default {
+    plugins: [
+        viteCommonjs(),
+    ],
     resolve: {
         alias: {
             // This Rollup aliases are extracted from @esbuild-plugins/node-modules-polyfill,

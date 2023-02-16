@@ -5,16 +5,18 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0 --port 8080",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "echo 'Production mode (Rollup) is not supported'; exit 1"
   },
   "devDependencies": {
+    "@originjs/vite-plugin-commonjs": "^1.0.3",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
   },
   "dependencies": {
     "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
     "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
-    "sass": "^1.58.1"
+    "chokidar": ">=3.0.0 <4.0.0",
+    "immutable": "^4.0.0",
+    "source-map-js": ">=0.6.2 <2.0.0"
   }
 }
