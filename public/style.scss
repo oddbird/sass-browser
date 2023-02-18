@@ -1,7 +1,5 @@
-// This is SCSS
-
-@import 'vars.scss';
-
-body {
-    background-color: $color;
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }

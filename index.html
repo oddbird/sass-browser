@@ -4,10 +4,25 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Sass (in browser)</title>
   </head>
   <body>
-    <div id="app"></div>
+    <section>
+      <textarea id="style-input" cols="50" rows="50">
+@import 'vars.scss';
+
+foo {
+  bar: $color;
+}
+      </textarea>
+      <textarea readonly id="style-output" cols="50" rows="50"></textarea>
+    </section>
+    <label for="syntax">Syntax</label>
+    <select name="syntax" id="syntax">
+      <option value="scss">Scss</option>
+      <option value="indented">Indented</option>
+    </select>
+    <button type="button">Compile</button>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
