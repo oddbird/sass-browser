@@ -7,7 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-build
+build/**/*.*
+build/npm/LICENSE
+!build/npm/sass.dart.js
+!build/npm/sass.default.dart.js
 node_modules
 dist
 dist-ssr
