@@ -9,9 +9,9 @@ const importers = [{
     },
     load(canonicalUrl: URL) {
         const request = new XMLHttpRequest();
-        request.onreadystatechange = function() {
-            if (this.readyState === 4 && this.status !== 200)
-            throw new Error(`Failed to fetch ${canonicalUrl}: ${this.status} (${this.statusText})`);
+        request.onreadystatechange = () => {
+            if (request.readyState === 4 && request.status !== 200)
+            throw new Error(`Failed to fetch ${canonicalUrl}: ${request.status} (${request.statusText})`);
         };
         request.open("GET", canonicalUrl, false);
         request.send();
