@@ -22,15 +22,13 @@ functions running in the browser:
 
 ## How?
 
-The main file is `build/npm/sass.dart.js`, which is copied from the `browser`
-branch in our [dart-sass
-repository](https://github.com/oddbird/dart-sass/tree/browser) and modified to
-work in the browser:
+The main file is `build/npm/sass.dart.js`, which is copied from [dart-sass
+repository](https://github.com/sass/dart-sass) and modified to work in the
+browser:
 
 ```
-git clone https://github.com/oddbird/dart-sass
+git clone https://github.com/sass/dart-sass
 cd dart-sass
-git switch browser
 dart pub get
 dart run grinder pkg-npm-dev
 ```
@@ -40,4 +38,5 @@ Copy the results into the `build/` folder of this repo:
 cp -r dart-sass/build sass-browser/build
 ```
 
-After that you can manually modify `build/npm/sass.dart.js`.
+After that you can manually modify `build/npm/sass.dart.js`. Currently all
+modifications made to this file are documented as issues in this repository.
