@@ -1,0 +1,42 @@
+{
+	"name": "Sass (in browser)",
+	"image": "node:16",
+	"mounts": [
+		"source=${localWorkspaceFolder}/../dart-sass/build,target=${containerWorkspaceFolder}/build,type=bind,consistency=cached"
+	],
+
+	// Configure tool-specific properties.
+	// "customizations": {
+	// 	// Configure properties specific to VS Code.
+	// 	"vscode": {
+	// 		// Add the IDs of extensions you want installed when the container is created.
+	// 		"extensions": [
+	// 			"dart-code.dart-code"
+	// 		],
+	// 		"settings": {
+	// 			"[dart]": {
+	// 				"editor.formatOnSave": true,
+	// 				"editor.formatOnType": true,
+	// 				"editor.rulers": [
+	// 				  80
+	// 				],
+	// 				"editor.selectionHighlight": false,
+	// 				"editor.suggest.snippetsPreventQuickSuggestions": false,
+	// 				"editor.suggestSelection": "first",
+	// 				"editor.tabCompletion": "onlySnippets",
+	// 				"editor.wordBasedSuggestions": false
+	// 			  }
+	// 		}
+	// 	}
+	// },
+
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [8080]
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+
+	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "vscode"
+}

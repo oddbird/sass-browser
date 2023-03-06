@@ -11,6 +11,7 @@ build/**/*.*
 build/npm/LICENSE
 !build/npm/sass.dart.js
 !build/npm/sass.default.dart.js
+!build/npm/sass.default.js
 node_modules
 dist
 dist-ssr
