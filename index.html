@@ -5,25 +5,19 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sass (in browser)</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "immutable": "./node_modules/immutable/dist/immutable.es.js"
+        }
+      }
+    </script>
+    <script type="module">
+      import * as sass from './build/npm/sass.default.js';
+      sass.compileString('@warn heck');
+    </script>
   </head>
   <body>
-    <section>
-      <textarea id="style-input" cols="50" rows="50">
-// This will fetch and compile `vars.scss` in the browser
-@import 'vars.scss';
-
-foo {
-  bar: $color;
-}
-      </textarea>
-      <textarea readonly id="style-output" cols="50" rows="50"></textarea>
-    </section>
-    <label for="syntax">Syntax</label>
-    <select name="syntax" id="syntax">
-      <option value="scss">Scss</option>
-      <option value="indented">Indented</option>
-    </select>
-    <button type="button">Compile</button>
-    <script type="module" src="/src/main.ts"></script>
+    Hello World!
   </body>
 </html>
