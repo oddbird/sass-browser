@@ -1,3 +1,5 @@
+⚠️ [Native browser support](https://github.com/sass/dart-sass#dart-sass-in-the-browser) has landed in Dart Sass! This repository is no longer useful or necessary ⚠️
+
 # Dart Sass running in the browser
 
 ## Quickstart
